@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrishitaa Vavilikolanu | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #a855f7;
+            --bg-dark: #0f172a;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #f1f5f9;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .nav-logo {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        /* Reveal Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .skill-tag {
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            background: rgba(99, 102, 241, 0.3);
+            transform: translateY(-2px);
+        }
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%);
+            filter: blur(80px);
+            border-radius: 50%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <div class="blob top-[-10%] left-[-10%]"></div>
+    <div class="blob bottom-[10%] right-[-10%]"></div>
+
+    <nav class="fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass-card rounded-full px-8 py-3">
+            <a href="#" class="nav-logo text-xl font-bold tracking-tighter">HV<span class="text-indigo-500">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-indigo-400 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+            </div>
+            <a href="mailto:hrishitaavavilikolanu@gmail.com" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2 rounded-full text-sm font-bold transition">Contact</a>
+        </div>
+    </nav>
+
+    <section id="about" class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-4xl text-center">
+            <div class="inline-block px-4 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold mb-6 tracking-widest uppercase">
+                Associate DevOps Engineer
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Hi, I'm <span class="gradient-text">Hrishitaa</span>.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Specializing in Cloud Infrastructure, DevOps workflows, and the integration of Embedded Systems with scalable software environments.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="bg-white text-slate-900 px-8 py-3 rounded-xl font-bold hover:bg-slate-200 transition">View Projects</a>
+                <a href="https://www.linkedin.com/in/hrishitaavavilikolanu" target="_blank" class="glass-card px-8 py-3 rounded-xl font-bold hover:bg-white/5 transition flex items-center gap-2">
+                    <i class="fab fa-linkedin text-lg"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-card reveal p-6 rounded-2xl border-l-4 border-indigo-500">
+                <h4 class="text-slate-400 text-xs font-bold uppercase mb-2">Education</h4>
+                <p class="text-sm font-semibold">B.E. in Electronics & Communication</p>
+                <p class="text-xs text-slate-500 mt-1">CBIT, Hyderabad (2021-Present)</p>
+            </div>
+            <div class="glass-card reveal p-6 rounded-2xl border-l-4 border-purple-500">
+                <h4 class="text-slate-400 text-xs font-bold uppercase mb-2">Current Role</h4>
+                <p class="text-sm font-semibold">Associate DevOps Engineer</p>
+                <p class="text-xs text-slate-500 mt-1">Cloud & Infrastructure Focus</p>
+            </div>
+            <div class="glass-card reveal p-6 rounded-2xl border-l-4 border-pink-500">
+                <h4 class="text-slate-400 text-xs font-bold uppercase mb-2">Availability</h4>
+                <p class="text-sm font-semibold">Hyderabad, India</p>
+                <p class="text-xs text-slate-500 mt-1">Open to remote & local collaboration</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+                <span class="w-12 h-[2px] bg-indigo-500"></span> Technical Core
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="reveal">
+                    <h3 class="text-indigo-400 font-bold mb-4 text-sm uppercase">Cloud & Infrastructure</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs">AWS Services</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Linux Administration</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Git & CI/CD</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Cloud Computing</span>
+                    </div>
+                </div>
+                <div class="reveal" style="transition-delay: 100ms;">
+                    <h3 class="text-indigo-400 font-bold mb-4 text-sm uppercase">Backend & Systems</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Python</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Java</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Embedded C</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs">SQL</span>
+                    </div>
+                </div>
+                <div class="reveal" style="transition-delay: 200ms;">
+                    <h3 class="text-indigo-400 font-bold mb-4 text-sm uppercase">IoT & Hardware</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Arduino</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Raspberry Pi</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Sensors & Prototyping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+                <span class="w-12 h-[2px] bg-indigo-500"></span> Featured Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card reveal rounded-3xl overflow-hidden group">
+                    <div class="h-48 bg-blue-900/30 flex items-center justify-center">
+                        <i class="fas fa-shopping-bag text-6xl text-blue-500/40 group-hover:scale-110 transition duration-500"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3">Best Gadget Showcase</h3>
+                        <p class="text-slate-400 text-sm mb-6">A dynamic web platform presenting top-tier tech gadgets with pricing data and shopping integration.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-slate-800 px-2 py-1 rounded border border-slate-700 uppercase">HTML/CSS</span>
+                            <span class="text-[10px] bg-slate-800 px-2 py-1 rounded border border-slate-700 uppercase">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card reveal rounded-3xl overflow-hidden group">
+                    <div class="h-48 bg-emerald-900/30 flex items-center justify-center">
+                        <i class="fas fa-microchip text-6xl text-emerald-500/40 group-hover:scale-110 transition duration-500"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3">Smart Toll Plaza</h3>
+                        <p class="text-slate-400 text-sm mb-6">Automated RFID collection system to reduce traffic congestion using Arduino Nano and IoT integration.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-slate-800 px-2 py-1 rounded border border-slate-700 uppercase">Arduino</span>
+                            <span class="text-[10px] bg-slate-800 px-2 py-1 rounded border border-slate-700 uppercase">RFID</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card reveal rounded-3xl overflow-hidden group">
+                    <div class="h-48 bg-purple-900/30 flex items-center justify-center">
+                        <i class="fas fa-robot text-6xl text-purple-500/40 group-hover:scale-110 transition duration-500"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3">Line Follower Robot</h3>
+                        <p class="text-slate-400 text-sm mb-6">Autonomous path tracking robot using IR sensors and motor driver logic for precision movement.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-slate-800 px-2 py-1 rounded border border-slate-700 uppercase">Sensors</span>
+                            <span class="text-[10px] bg-slate-800 px-2 py-1 rounded border border-slate-700 uppercase">Robotics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card reveal rounded-3xl overflow-hidden group">
+                    <div class="h-48 bg-indigo-900/30 flex items-center justify-center">
+                        <i class="fas fa-wave-square text-6xl text-indigo-500/40 group-hover:scale-110 transition duration-500"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3">PLL Design using ADS</h3>
+                        <p class="text-slate-400 text-sm mb-6">Frequency synchronization modeling for signal processing using Advanced Design Systems.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-slate-800 px-2 py-1 rounded border border-slate-700 uppercase">ADS</span>
+                            <span class="text-[10px] bg-slate-800 px-2 py-1 rounded border border-slate-700 uppercase">Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-24 px-6 text-center border-t border-slate-800">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+            <p class="text-slate-400 mb-10">Currently building robust infrastructure and exploring DevOps engineering. Open to technical collaborations.</p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <a href="mailto:hrishitaavavilikolanu@gmail.com" class="text-indigo-400 font-semibold text-lg hover:text-indigo-300 transition">
+                    hrishitaavavilikolanu@gmail.com
+                </a>
+                <span class="hidden md:block text-slate-700">|</span>
+                <p class="text-slate-400">+91 9966402728</p>
+            </div>
+            <div class="mt-12 flex justify-center gap-8 text-2xl text-slate-500">
+                <a href="https://www.linkedin.com/in/hrishitaavavilikolanu" target="_blank" class="hover:text-indigo-500 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" class="hover:text-white transition"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="mt-20 text-xs text-slate-600">© 2024 Hrishitaa Vavilikolanu. Associate DevOps Engineer.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Use a more robust way to handle the observer
+        const observerOptions = {
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        // Apply to all elements with the 'reveal' class
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
